@@ -2,12 +2,12 @@
                 Basic Styles
 ============================================ */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
 }
 
 $light-grey: #D7D1D1;
@@ -19,37 +19,37 @@ $white: #FFFFFF;
 $red: #EA4049;
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .clearfix:before,
 .clearfix:before {
-  display: table;
-  content: " ";
+    display: table;
+    content: " ";
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
 .container {
-  margin: 0 auto;
-  width: 85%;
-  
-  @media (min-width: $toast-breakpoint-medium) {
-    width: 90%
-  }
+    margin: 0 auto;
+    width: 85%;
+
+    @media (min-width: $toast-breakpoint-medium) {
+        width: 90%
+    }
 }
 
 .alert, .notice {
-  text-align: center;
+    text-align: center;
 }
 
 .center {
-  transform: translate(-50%, -50%);
-  position: relative;
-  left: 50%;
-  top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
 }
 
 .text-center { text-align: center; }
@@ -59,178 +59,178 @@ h1, h2, h3, h4, h5, h6 {
 .hidden { display: none; }
 
 .title {
-  text-transform: uppercase;
-  @extend .text-center;
-  font-weight: bold;
-  padding: 40px 0;
-  font-size: 40px;
-  color: $black;
-  margin: 0;
+    text-transform: uppercase;
+    @extend .text-center;
+    font-weight: bold;
+    padding: 40px 0;
+    font-size: 40px;
+    color: $black;
+    margin: 0;
 
-  @media (min-width: $toast-breakpoint-medium) {
-    font-size: 60px;
-  }
+    @media (min-width: $toast-breakpoint-medium) {
+        font-size: 60px;
+    }
 }
 
 .title-left {
-  text-align: left;
-  @extend .title;
+    text-align: left;
+    @extend .title;
 }
 
 p {
-  color: $dark-grey;
-  font-size: 16px;
-  margin: 0;
+    color: $dark-grey;
+    font-size: 16px;
+    margin: 0;
 }
 
 a {
-  text-decoration: none;
-  color: $dark-grey;
+    text-decoration: none;
+    color: $dark-grey;
 }
 
 /* ===========================================
-                  Buttons
+                Buttons
 ============================================ */
 .button {
-  border-radius: 2px;
-  padding: 15px 20px;
-  height: 50px;
-  border: 0;
+    border-radius: 2px;
+    padding: 15px 20px;
+    height: 50px;
+    border: 0;
 }
 
 .button-primary {
-  transition: 500ms background ease-in-out;
-  background: $primary;
-  @extend .button;
-  color: $white;
+    transition: 500ms background ease-in-out;
+    background: $primary;
+    @extend .button;
+    color: $white;
 
-  &:hover {
-    background: darken($primary, 10%);
-  }
+    &:hover {
+        background: darken($primary, 10%);
+    }
 }
 
 .button-secondary {
-  transition: 500ms background ease-in-out;
-  background: $secondary;
-  @extend .button;
-  color: $white;
+    transition: 500ms background ease-in-out;
+    background: $secondary;
+    @extend .button;
+    color: $white;
 
-  &:hover {
-    background: darken($secondary, 10%);
-  }
+    &:hover {
+        background: darken($secondary, 10%);
+    }
 }
 
 .button-red {
-  transition: 500ms background ease-in-out;
-  background: $red;
-  @extend .button;
-  color: $white;
+    transition: 500ms background ease-in-out;
+    background: $red;
+    @extend .button;
+    color: $white;
 
-  &:hover {
-    background: darken($red, 10%);
-  }
+    &:hover {
+        background: darken($red, 10%);
+    }
 }
 
 .button-border {
-  transition: 500ms background ease-in-out;
-  border: 2px solid $white;
-  padding: 10px 20px;
-  @extend .button;
-  color: $white;
+    transition: 500ms background ease-in-out;
+    border: 2px solid $white;
+    padding: 10px 20px;
+    @extend .button;
+    color: $white;
 
-  &:hover {
-    background: $white;
-  }
+    &:hover {
+        background: $white;
+    }
 }
 
 /* ===========================================
-              Main Navigation
+            Main Navigation
 ============================================ */
 .topheader {
-  background: $primary;
-  height: 6px;
+    background: $primary;
+    height: 6px;
 }
 
 #main-navigation {
-  min-height: 100px;
+    min-height: 100px;
 
-  .navigation-left {
-    padding: 17px 0;
-    float: left;
+    .navigation-left {
+        padding: 17px 0;
+        float: left;
 
-    img {
-      height: 60px;
+        img {
+          height: 60px;
+        }
     }
-  }
 
-  a#mobile-navigation {
-    i {
-      display: block;
-      color: $white;
+    a#mobile-navigation {
+        i {
+          display: block;
+          color: $white;
+        }
     }
-  }
-  
-  .navigation-right {
-    padding: 37px 0;
-    display: none;
-    float: right;
 
-    a {
-      margin-right: 15px;
-      color: $white;
+    .navigation-right {
+        padding: 37px 0;
+        display: none;
+        float: right;
 
-      &:hover {
-        color: $black;
-      }
+        a {
+            margin-right: 15px;
+            color: $white;
+
+            &:hover {
+                color: $black;
+            }
+        }
     }
-  }
 
-  @media (min-width: $toast-breakpoint-medium) {
-    .navigation-right { display: block; }
-    a#mobile-navigation { display: none; }
-  }
+    @media (min-width: $toast-breakpoint-medium) {
+        .navigation-right { display: block; }
+        a#mobile-navigation { display: none; }
+    }
 }
 
 /* ===========================================
-                  Masthead
+                Masthead
 ============================================ */
 #masthead {
-  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, .60);
-  margin-top: -122px;
-  height: 300px;
-  z-index: -999;
+    box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, .60);
+    margin-top: -122px;
+    height: 300px;
+    z-index: -999;
 
-  .inner {
-    @extend .text-center;
-    @extend .center;
-    margin: 0;
+    .inner {
+        @extend .text-center;
+        @extend .center;
+        margin: 0;
 
-    h1, h4 {
-      color: $white;
+        h1, h4 {
+            color: $white;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            padding-top: 50px;
+        }
     }
-
-    h1 {
-      text-transform: uppercase;
-      padding-top: 50px;
-    }
-  }
 }
 
 /* ===========================================
               Block sections
 ============================================ */
 .block {
-  @extend .text-center;
-  padding-bottom: 60px;
+    @extend .text-center;
+    padding-bottom: 60px;
 
-  p { padding-bottom: 60px; }
+    p { padding-bottom: 60px; }
 
-  @media (min-width: $toast-breakpoint-medium) {
-    p {
-      margin: 0 auto;
-      width: 960px;
+    @media (min-width: $toast-breakpoint-medium) {
+        p {
+            margin: 0 auto;
+            width: 960px;
+        }
     }
-  }
 }
 
 /* ===========================================
@@ -241,41 +241,41 @@ input[type="email"],
 input[type="number"],
 input[type="password"],
 textarea {
-  border: 2px solid $light-grey;
-  margin: .5em 0 2em 0;
-  max-width: 100%;
-  padding: 1em;
-  width: 100%;
-  height: 3.5em;
+    border: 2px solid $light-grey;
+    margin: .5em 0 2em 0;
+    max-width: 100%;
+    padding: 1em;
+    width: 100%;
+    height: 3.5em;
 }
 
 input[type='number'] {
-  height: 3.5em;
+    height: 3.5em;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 textarea {
-  max-height: 20em;
-  resize: none;
-  height: 20em;
+    max-height: 20em;
+    resize: none;
+    height: 20em;
 }
 
 input[type="submit"] {
-  border: 2px solid $light-grey;
-  background: transparent;
-  text-decoration: none;
-  text-align: center;
-  color: $dark-grey;
-  padding: 0 2em;
-  font-size: 1em;
-  outline: none;
-  
-  &:hover {
-    border: 2px solid $primary;
-    color: $primary;
-  }
+    border: 2px solid $light-grey;
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
+    color: $dark-grey;
+    padding: 0 2em;
+    font-size: 1em;
+    outline: none;
+
+    &:hover {
+        border: 2px solid $primary;
+        color: $primary;
+    }
 }

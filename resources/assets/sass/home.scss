@@ -2,97 +2,97 @@
               Masthead homepage
 ============================================ */
 #masthead-index {
-  background: url("../images/masthead.jpg") no-repeat;
-  background-size: cover;
-  @extend #masthead;
-  height: 900px;
+    background: url("../images/masthead.jpg") no-repeat;
+    background-size: cover;
+    @extend #masthead;
+    height: 900px;
 
-  .inner {
-    padding-top: 0;
+    .inner {
+        padding-top: 0;
 
-    h1, h4 { text-transform: none; }
+        h1, h4 { text-transform: none; }
 
-    .button-group {
-      padding: 30px 0;
+        .button-group {
+            padding: 30px 0;
 
-      .grid__col:nth-child(1) {
-        padding: 0 0 45px 0;
-      }
+            .grid__col::nth-child(1) {
+                padding: 0 0 45px 0;
+            }
 
-      @media (min-width: $toast-breakpoint-medium) {
-        margin: 0 auto;
-        width: 415px;
+            @media (min-width: $toast-breakpoint-medium) {
+                margin: 0 auto;
+                width: 415px;
 
-        .grid__col:nth-child(1) {
-          padding: 0;
+                .grid__col::nth-child(1) {
+                    padding: 0;
+                }
+
+                a::nth-child(1) {
+                    margin-right: 20px;
+                }
+            }
         }
-
-        a:nth-child(1) {
-          margin-right: 20px;
-        }
-      }
     }
-  }
 }
 
 /* ===========================================
                 What we do
 ============================================ */
 #what-we-do {
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .70);
-  background: url("../images/what-we-do.jpg") no-repeat;
-  background-size: cover;
-  @extend .block;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .70);
+    background: url("../images/what-we-do.jpg") no-repeat;
+    background-size: cover;
+    @extend .block;
 
-  .button-red {
-    padding: 15px 100px;
-  }
+    .button-red {
+        padding: 15px 100px;
+    }
 }
 
 /* ===========================================
                     FAQ
 ============================================ */
 #faq {
-  @extend .block;
+    @extend .block;
 
-  #accordion {
-    input {
-      display: none;
+    #accordion {
+        input {
+            display: none;
+        }
+
+        label {
+            border-bottom: 1px dotted $light-grey;
+            border-top: 1px dotted $light-grey;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: block;
+            padding: 10px;
+            z-index: 20;
+        }
+
+        article {
+            overflow: hidden;
+            z-index: 10;
+            height: 0;
+
+            p {
+                padding: 1em;
+            }
+        }
+
+        @media (min-width: $toast-breakpoint-medium) {
+            margin: 0 auto;
+            width: 960px;
+        }
     }
 
-    label {
-      border-bottom: 1px dotted $light-grey;
-      border-top: 1px dotted $light-grey;
-      margin-bottom: 10px;
-      cursor: pointer;
-      display: block;
-      padding: 10px;
-      z-index: 20;
+    #accordion input:checked + label {
+        margin-bottom: 0;
     }
 
-    article {
-      overflow: hidden;
-      z-index: 10;
-      height: 0;
-
-      p {
-        padding: 1em;
-      }
+    #accordion input:checked ~ article {
+        border-bottom: 1px dotted $light-grey;
+        margin-bottom: 10px;
+        height: auto;
     }
-
-    @media (min-width: $toast-breakpoint-medium) {
-      margin: 0 auto;
-      width: 960px;
-    }
-  }
-
-  #accordion input:checked + label {
-    margin-bottom: 0;
-  }
-
-  #accordion input:checked ~ article {
-    border-bottom: 1px dotted $light-grey;
-    margin-bottom: 10px;
-    height: auto;
-  }
 }

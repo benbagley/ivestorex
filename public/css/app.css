@@ -3153,7 +3153,7 @@ a {
   color: #666666; }
 
 /* ===========================================
-                  Buttons
+                Buttons
 ============================================ */
 .button, .button-primary, .button-secondary, .button-red, .button-border {
   border-radius: 2px;
@@ -3195,7 +3195,7 @@ a {
     background: #FFFFFF; }
 
 /* ===========================================
-              Main Navigation
+            Main Navigation
 ============================================ */
 .topheader {
   background: #9E67B3;
@@ -3227,7 +3227,7 @@ a {
       display: none; } }
 
 /* ===========================================
-                  Masthead
+                Masthead
 ============================================ */
 #masthead, #masthead-index, #masthead-help {
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
@@ -3307,15 +3307,15 @@ input[type="submit"] {
       text-transform: none; }
     #masthead-index .inner .button-group {
       padding: 30px 0; }
-      #masthead-index .inner .button-group .grid__col:nth-child(1) {
+      #masthead-index .inner .button-group .grid__col::nth-child(1) {
         padding: 0 0 45px 0; }
       @media (min-width: 700px) {
         #masthead-index .inner .button-group {
           margin: 0 auto;
           width: 415px; }
-          #masthead-index .inner .button-group .grid__col:nth-child(1) {
+          #masthead-index .inner .button-group .grid__col::nth-child(1) {
             padding: 0; }
-          #masthead-index .inner .button-group a:nth-child(1) {
+          #masthead-index .inner .button-group a::nth-child(1) {
             margin-right: 20px; } }
 
 /* ===========================================
