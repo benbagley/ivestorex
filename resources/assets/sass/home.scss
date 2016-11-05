@@ -2,8 +2,8 @@
                   Masthead
 ============================================ */
 #masthead {
-  background: url("https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=460fc65c8079dc4bd4a2ee7fa1fd7946") no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, .60);
+  background: url("../images/masthead.jpg") no-repeat;
   background-size: cover;
   margin-top: -122px;
   z-index: -999;
@@ -43,8 +43,8 @@
                 What we do
 ============================================ */
 #what-we-do {
-  background: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=2e481631f9841642ba61e30d6c41f7ff") no-repeat;
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .60);
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .70);
+  background: url("../images/what-we-do.jpg") no-repeat;
   background-size: cover;
   @extend .text-center;
   padding-bottom: 60px;

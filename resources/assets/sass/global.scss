@@ -92,7 +92,6 @@ a {
                   Buttons
 ============================================ */
 .button {
-  transition: 700ms background ease-in-out;
   border-radius: 2px;
   padding: 15px 20px;
   height: 50px;
@@ -100,6 +99,7 @@ a {
 }
 
 .button-primary {
+  transition: 500ms background ease-in-out;
   background: $primary;
   @extend .button;
   color: $white;
@@ -110,6 +110,7 @@ a {
 }
 
 .button-secondary {
+  transition: 500ms background ease-in-out;
   background: $secondary;
   @extend .button;
   color: $white;
@@ -120,6 +121,7 @@ a {
 }
 
 .button-red {
+  transition: 500ms background ease-in-out;
   background: $red;
   @extend .button;
   color: $white;
@@ -130,6 +132,7 @@ a {
 }
 
 .button-border {
+  transition: 500ms background ease-in-out;
   border: 2px solid $white;
   padding: 10px 20px;
   @extend .button;

@@ -3,21 +3,23 @@
 @section('content')
 <div id="masthead">
     <div class="inner">
-        <h1>Welcome to <span class="bold">Investorex</span></h1>
-        <h4>World class Forex Education and Wealth Management</h4>
+        <div class="animated zoomIn">
+            <h1>Welcome to <span class="bold">Investorex</span></h1>
+            <h4>World class Forex Education and Wealth Management</h4>
 
-        <div class="button-group">
-            <div class="grid grid--no-gutter">
-                <div class="grid__col grid__col--1-of-2">
-                    <a href="#" class="button-primary">Fund Management</a>
-                </div>
-                <div class="grid__col grid__col--1-of-2">
-                    <a href="#" class="button-secondary">Forex Apprenticeship</a>
+            <div class="button-group">
+                <div class="grid grid--no-gutter">
+                    <div class="grid__col grid__col--1-of-2">
+                        <a href="#" class="button-primary">Fund Management</a>
+                    </div>
+                    <div class="grid__col grid__col--1-of-2">
+                        <a href="#" class="button-secondary">Forex Apprenticeship</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <h4>Exposing the bank's <span class="bold">dirty little secrets</span> that they do not want you to know.</h4>
+            <h4>Exposing the bank's <span class="bold">dirty little secrets</span> that they do not want you to know.</h4>
+        </div>
     </div>
 </div>
 
