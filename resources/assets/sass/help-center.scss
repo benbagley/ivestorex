@@ -1,0 +1,28 @@
+/* ===========================================
+            Masthead help center
+============================================ */
+#masthead-help {
+    background: url("../images/masthead-help-center.jpg") no-repeat;
+    background-position: -10%;
+    background-size: cover;
+    @extend #masthead;
+}
+
+#email-section {
+    @extend .text-center;
+    padding: 20px 0;
+
+    .title a {
+        transition: 700ms color ease-in-out;
+        font-weight: normal;
+        font-size: 21px;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    @media (min-width: $toast-breakpoint-medium) {
+        .title a { font-size: 28px; }
+    }
+}

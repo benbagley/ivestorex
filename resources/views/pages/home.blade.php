@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="masthead">
+<div id="masthead-index">
     <div class="inner">
         <div class="animated zoomIn">
             <h1>Welcome to <span class="bold">Investorex</span></h1>

@@ -3,7 +3,7 @@
 <div id="main-navigation" class="animated bounceInDown">
     <div class="inner">
         <div class="navigation-left">
-            <img src="{{URL::asset('/images/logo.png')}}">
+            <a href="{{ URL::to('/') }}"><img src="{{URL::asset('/images/logo.png')}}"></a>
         </div>
 
         <a href="#" id="mobile-navigation"><i class="fa fa-bars"></i></a>
@@ -11,7 +11,7 @@
         <div class="navigation-right">
             <a href="#">Learn</a>
             <a href="#">Community</a>
-            <a href="#">Help Center</a>
+            <a href="{{ URL::to('help') }}">Help Center</a>
             <a href="#" class="button-border">Contact</a>
         </div>
     </div>

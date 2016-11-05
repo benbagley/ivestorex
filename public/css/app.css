@@ -3110,14 +3110,14 @@ h1, h2, h3, h4, h5, h6 {
 .alert, .notice {
   text-align: center; }
 
-.center, #masthead .inner {
+.center, #masthead .inner, #masthead-index .inner, #masthead-help .inner {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: relative;
   left: 50%;
   top: 50%; }
 
-.text-center, .title, .title-left, #masthead .inner, #what-we-do {
+.text-center, .title, .title-left, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #what-we-do, #email-section {
   text-align: center; }
 
 .center-100 {
@@ -3227,6 +3227,22 @@ a {
       display: none; } }
 
 /* ===========================================
+                  Masthead
+============================================ */
+#masthead, #masthead-index, #masthead-help {
+  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
+  margin-top: -122px;
+  height: 300px;
+  z-index: -999; }
+  #masthead .inner, #masthead-index .inner, #masthead-help .inner {
+    margin: 0; }
+    #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead .inner h4, #masthead-index .inner h4, #masthead-help .inner h4 {
+      color: #FFFFFF; }
+    #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1 {
+      text-transform: uppercase;
+      padding-top: 50px; }
+
+/* ===========================================
                     Forms
 ============================================ */
 input[type="text"],
@@ -3267,30 +3283,27 @@ input[type="submit"] {
     color: #9E67B3; }
 
 /* ===========================================
-                  Masthead
+              Masthead homepage
 ============================================ */
-#masthead {
-  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
+#masthead-index {
   background: url("../images/masthead.jpg") no-repeat;
   background-size: cover;
-  margin-top: -122px;
-  z-index: -999;
   height: 900px; }
-  #masthead .inner {
-    margin: 0; }
-    #masthead .inner h1, #masthead .inner h4 {
-      color: #FFFFFF; }
-    #masthead .inner .button-group {
+  #masthead-index .inner {
+    padding-top: 0; }
+    #masthead-index .inner h1, #masthead-index .inner h4 {
+      text-transform: none; }
+    #masthead-index .inner .button-group {
       padding: 30px 0; }
-      #masthead .inner .button-group .grid__col:nth-child(1) {
+      #masthead-index .inner .button-group .grid__col:nth-child(1) {
         padding: 0 0 45px 0; }
       @media (min-width: 700px) {
-        #masthead .inner .button-group {
+        #masthead-index .inner .button-group {
           margin: 0 auto;
           width: 415px; }
-          #masthead .inner .button-group .grid__col:nth-child(1) {
+          #masthead-index .inner .button-group .grid__col:nth-child(1) {
             padding: 0; }
-          #masthead .inner .button-group a:nth-child(1) {
+          #masthead-index .inner .button-group a:nth-child(1) {
             margin-right: 20px; } }
 
 /* ===========================================
@@ -3309,5 +3322,26 @@ input[type="submit"] {
     #what-we-do p {
       margin: 0 auto;
       width: 960px; } }
+
+/* ===========================================
+            Masthead help center
+============================================ */
+#masthead-help {
+  background: url("../images/masthead-help-center.jpg") no-repeat;
+  background-position: -10%;
+  background-size: cover; }
+
+#email-section {
+  padding: 20px 0; }
+  #email-section .title a, #email-section .title-left a {
+    -webkit-transition: 700ms color ease-in-out;
+    transition: 700ms color ease-in-out;
+    font-weight: normal;
+    font-size: 21px; }
+    #email-section .title a:hover, #email-section .title-left a:hover {
+      color: #9E67B3; }
+  @media (min-width: 700px) {
+    #email-section .title a, #email-section .title-left a {
+      font-size: 28px; } }
 
 /*# sourceMappingURL=app.css.map */

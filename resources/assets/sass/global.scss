@@ -192,6 +192,31 @@ a {
 }
 
 /* ===========================================
+                  Masthead
+============================================ */
+#masthead {
+  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, .60);
+  margin-top: -122px;
+  height: 300px;
+  z-index: -999;
+
+  .inner {
+    @extend .text-center;
+    @extend .center;
+    margin: 0;
+
+    h1, h4 {
+      color: $white;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      padding-top: 50px;
+    }
+  }
+}
+
+/* ===========================================
                     Forms
 ============================================ */
 input[type="text"],
