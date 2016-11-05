@@ -1,0 +1,236 @@
+/* ===========================================
+                Basic Styles
+============================================ */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+$light-grey: #D7D1D1;
+$dark-grey: #666666;
+$secondary: #2691CD;
+$primary: #9E67B3;
+$black: #3E3E3E;
+$white: #FFFFFF;
+$red: #EA4049;
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+.clearfix:before,
+.clearfix:before {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+  
+  @media (min-width: $toast-breakpoint-medium) {
+    width: 90%
+  }
+}
+
+.alert, .notice {
+  text-align: center;
+}
+
+.center {
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+
+.text-center { text-align: center; }
+.inner { @extend .container; }
+.center-100 { width: 100%; }
+.bold { font-weight: 700; }
+.hidden { display: none; }
+
+.title {
+  text-transform: uppercase;
+  @extend .text-center;
+  font-weight: bold;
+  padding: 40px 0;
+  font-size: 40px;
+  color: $black;
+  margin: 0;
+
+  @media (min-width: $toast-breakpoint-medium) {
+    font-size: 60px;
+  }
+}
+
+.title-left {
+  text-align: left;
+  @extend .title;
+}
+
+p {
+  color: $dark-grey;
+  font-size: 16px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+/* ===========================================
+                  Buttons
+============================================ */
+.button {
+  transition: 700ms background ease-in-out;
+  border-radius: 2px;
+  padding: 15px 20px;
+  height: 50px;
+  border: 0;
+}
+
+.button-primary {
+  background: $primary;
+  @extend .button;
+  color: $white;
+
+  &:hover {
+    background: darken($primary, 10%);
+  }
+}
+
+.button-secondary {
+  background: $secondary;
+  @extend .button;
+  color: $white;
+
+  &:hover {
+    background: darken($secondary, 10%);
+  }
+}
+
+.button-red {
+  background: $red;
+  @extend .button;
+  color: $white;
+
+  &:hover {
+    background: darken($red, 10%);
+  }
+}
+
+.button-border {
+  border: 2px solid $white;
+  padding: 10px 20px;
+  @extend .button;
+  color: $white;
+
+  &:hover {
+    background: $white;
+  }
+}
+
+/* ===========================================
+              Main Navigation
+============================================ */
+.topheader {
+  background: $primary;
+  height: 6px;
+}
+
+#main-navigation {
+  min-height: 100px;
+
+  .navigation-left {
+    padding: 17px 0;
+    float: left;
+
+    img {
+      height: 60px;
+    }
+  }
+
+  a#mobile-navigation {
+    i {
+      display: block;
+      color: $white;
+    }
+  }
+  
+  .navigation-right {
+    padding: 37px 0;
+    display: none;
+    float: right;
+
+    a {
+      margin-right: 15px;
+      color: $white;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  @media (min-width: $toast-breakpoint-medium) {
+    .navigation-right { display: block; }
+    a#mobile-navigation { display: none; }
+  }
+}
+
+/* ===========================================
+                    Forms
+============================================ */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea {
+  border: 2px solid $light-grey;
+  margin: .5em 0 2em 0;
+  max-width: 100%;
+  padding: 1em;
+  width: 100%;
+  height: 3.5em;
+}
+
+input[type='number'] {
+  height: 3.5em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea {
+  max-height: 20em;
+  resize: none;
+  height: 20em;
+}
+
+input[type="submit"] {
+  border: 2px solid $light-grey;
+  background: transparent;
+  text-decoration: none;
+  text-align: center;
+  color: $dark-grey;
+  padding: 0 2em;
+  font-size: 1em;
+  outline: none;
+  
+  &:hover {
+    border: 2px solid $primary;
+    color: $primary;
+  }
+}
