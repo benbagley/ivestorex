@@ -42,19 +42,57 @@
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .70);
   background: url("../images/what-we-do.jpg") no-repeat;
   background-size: cover;
-  @extend .text-center;
-  padding-bottom: 60px;
-
-  p { padding-bottom: 60px; }
+  @extend .block;
 
   .button-red {
     padding: 15px 100px;
   }
+}
 
-  @media (min-width: $toast-breakpoint-medium) {
-    p {
+/* ===========================================
+                    FAQ
+============================================ */
+#faq {
+  @extend .block;
+
+  #accordion {
+    input {
+      display: none;
+    }
+
+    label {
+      border-bottom: 1px dotted $light-grey;
+      border-top: 1px dotted $light-grey;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: block;
+      padding: 10px;
+      z-index: 20;
+    }
+
+    article {
+      overflow: hidden;
+      z-index: 10;
+      height: 0;
+
+      p {
+        padding: 1em;
+      }
+    }
+
+    @media (min-width: $toast-breakpoint-medium) {
       margin: 0 auto;
       width: 960px;
     }
+  }
+
+  #accordion input:checked + label {
+    margin-bottom: 0;
+  }
+
+  #accordion input:checked ~ article {
+    border-bottom: 1px dotted $light-grey;
+    margin-bottom: 10px;
+    height: auto;
   }
 }

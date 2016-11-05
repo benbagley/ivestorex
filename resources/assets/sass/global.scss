@@ -217,6 +217,23 @@ a {
 }
 
 /* ===========================================
+              Block sections
+============================================ */
+.block {
+  @extend .text-center;
+  padding-bottom: 60px;
+
+  p { padding-bottom: 60px; }
+
+  @media (min-width: $toast-breakpoint-medium) {
+    p {
+      margin: 0 auto;
+      width: 960px;
+    }
+  }
+}
+
+/* ===========================================
                     Forms
 ============================================ */
 input[type="text"],

@@ -3117,7 +3117,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   top: 50%; }
 
-.text-center, .title, .title-left, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #what-we-do, #email-section {
+.text-center, .title, .title-left, #masthead .inner, #masthead-index .inner, #masthead-help .inner, .block, #what-we-do, #faq, #email-section {
   text-align: center; }
 
 .center-100 {
@@ -3243,6 +3243,18 @@ a {
       padding-top: 50px; }
 
 /* ===========================================
+              Block sections
+============================================ */
+.block, #what-we-do, #faq {
+  padding-bottom: 60px; }
+  .block p, #what-we-do p, #faq p {
+    padding-bottom: 60px; }
+  @media (min-width: 700px) {
+    .block p, #what-we-do p, #faq p {
+      margin: 0 auto;
+      width: 960px; } }
+
+/* ===========================================
                     Forms
 ============================================ */
 input[type="text"],
@@ -3312,16 +3324,44 @@ input[type="submit"] {
 #what-we-do {
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
   background: url("../images/what-we-do.jpg") no-repeat;
-  background-size: cover;
-  padding-bottom: 60px; }
-  #what-we-do p {
-    padding-bottom: 60px; }
+  background-size: cover; }
   #what-we-do .button-red {
     padding: 15px 100px; }
-  @media (min-width: 700px) {
-    #what-we-do p {
-      margin: 0 auto;
-      width: 960px; } }
+
+/* ===========================================
+                    FAQ
+============================================ */
+#faq #accordion input {
+  display: none; }
+
+#faq #accordion label {
+  border-bottom: 1px dotted #D7D1D1;
+  border-top: 1px dotted #D7D1D1;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  z-index: 20; }
+
+#faq #accordion article {
+  overflow: hidden;
+  z-index: 10;
+  height: 0; }
+  #faq #accordion article p {
+    padding: 1em; }
+
+@media (min-width: 700px) {
+  #faq #accordion {
+    margin: 0 auto;
+    width: 960px; } }
+
+#faq #accordion input:checked + label {
+  margin-bottom: 0; }
+
+#faq #accordion input:checked ~ article {
+  border-bottom: 1px dotted #D7D1D1;
+  margin-bottom: 10px;
+  height: auto; }
 
 /* ===========================================
             Masthead help center
