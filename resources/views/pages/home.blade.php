@@ -45,9 +45,9 @@
             <div>
                 <input type="checkbox" id="check-2" />
                 <label for="check-2">Option 2</label>
-                <article>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti reiciendis corporis porro in exercitationem incidunt, est veniam aspernatur, possimus id temporibus quibusdam cum ea expedita quos perferendis neque? Veritatis, repellendus.</p>
-                </article>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti reiciendis corporis porro in exercitationem incidunt, est veniam aspernatur, possimus id temporibus quibusdam cum ea expedita quos perferendis neque? Veritatis, repellendus.</p>
+                    </article>
             </div>
             <div>
                 <input type="checkbox" id="check-3" />
