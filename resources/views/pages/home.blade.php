@@ -31,9 +31,28 @@
     </div>
 </div>
 
+<div id="how-do-I-join">
+    <div class="inner">
+        <h1 class="title">How do I join?</h1>
+        <p>To join, follow these steps:</p>
+
+        <div class="list">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi explicabo deserunt quis nemo tempore cumque architecto eos nam dolorem incidunt alias saepe, a, natus nesciunt, hic dolor commodi! Consequuntur, ipsa?</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor impedit ipsum, in quas neque odit repudiandae maiores consectetur iure, autem modi nisi debitis dolorem voluptatum sed. Minima molestias, at dicta.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem vero officia earum ratione aliquid quibusdam cumque ea quo quas facilis dolor eveniet, explicabo quae dolore sapiente veniam qui, debitis.</p>
+        </div>
+
+        <a href="#" class="button-red">Join Now</a>
+    </div>
+</div>
+
 <div id="faq">
     <div class="inner">
-        <h1 class="title">FAQ</h1>
+        <h1 class="title">FAQ</h1>  
+        <p>Answers to the questions we get asked the most.</p>
+
         <section id="accordion">
             <div>
                 <input type="checkbox" id="check-1" />

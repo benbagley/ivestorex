@@ -3117,11 +3117,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   top: 50%; }
 
-.text-center, .title, .title-left, #masthead .inner, #masthead-index .inner, #masthead-help .inner, .block, #what-we-do, #faq, #email-section {
+.text-center, .title, .title-left, #masthead .inner, #masthead-index .inner, #masthead-help .inner, .block, #what-we-do, #how-do-I-join, #faq, #email-section {
   text-align: center; }
-
-.center-100 {
-  width: 100%; }
 
 .bold {
   font-weight: 700; }
@@ -3245,12 +3242,12 @@ a {
 /* ===========================================
               Block sections
 ============================================ */
-.block, #what-we-do, #faq {
+.block, #what-we-do, #how-do-I-join, #faq {
   padding-bottom: 60px; }
-  .block p, #what-we-do p, #faq p {
-    padding-bottom: 60px; }
+  .block p, #what-we-do p, #how-do-I-join p, #faq p {
+    padding-bottom: 40px; }
   @media (min-width: 700px) {
-    .block p, #what-we-do p, #faq p {
+    .block p, #what-we-do p, #how-do-I-join p, #faq p {
       margin: 0 auto;
       width: 960px; } }
 
@@ -3300,32 +3297,57 @@ input[type="submit"] {
 #masthead-index {
   background: url("../images/masthead.jpg") no-repeat;
   background-size: cover;
-  height: 900px; }
+  height: 750px; }
   #masthead-index .inner {
     padding-top: 0; }
     #masthead-index .inner h1, #masthead-index .inner h4 {
       text-transform: none; }
     #masthead-index .inner .button-group {
       padding: 30px 0; }
-      #masthead-index .inner .button-group .grid__col::nth-child(1) {
-        padding: 0 0 45px 0; }
+      #masthead-index .inner .button-group .grid__col.grid__col--1-of-2:nth-child(1) {
+        padding-bottom: 40px; }
       @media (min-width: 700px) {
         #masthead-index .inner .button-group {
           margin: 0 auto;
           width: 415px; }
-          #masthead-index .inner .button-group .grid__col::nth-child(1) {
+          #masthead-index .inner .button-group .grid__col.grid__col--1-of-2:nth-child(1) {
             padding: 0; }
           #masthead-index .inner .button-group a::nth-child(1) {
             margin-right: 20px; } }
+  @media (min-width: 700px) {
+    #masthead-index {
+      height: 900px; } }
 
 /* ===========================================
                 What we do
 ============================================ */
 #what-we-do {
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
+  background-size: cover; }
+  #what-we-do p {
+    padding-bottom: 60px; }
+  #what-we-do .button-red {
+    padding: 15px 100px; }
+
+/* ===========================================
+            How do I join?
+============================================ */
+#how-do-I-join {
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.7);
   background: url("../images/what-we-do.jpg") no-repeat;
   background-size: cover; }
-  #what-we-do .button-red {
+  #how-do-I-join .list p {
+    border-bottom: 1px dotted #D7D1D1;
+    border-top: 1px dotted #D7D1D1;
+    padding: 15px; }
+    #how-do-I-join .list p:nth-child(-n+2) {
+      margin: 0 auto 15px auto; }
+    #how-do-I-join .list p:last-child {
+      margin-bottom: 40px; }
+    @media (min-width: 700px) {
+      #how-do-I-join .list p {
+        width: 960px; } }
+  #how-do-I-join .button-red {
     padding: 15px 100px; }
 
 /* ===========================================
@@ -3337,10 +3359,10 @@ input[type="submit"] {
 #faq #accordion label {
   border-bottom: 1px dotted #D7D1D1;
   border-top: 1px dotted #D7D1D1;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   cursor: pointer;
   display: block;
-  padding: 10px;
+  padding: 15px;
   z-index: 20; }
 
 #faq #accordion article {
@@ -3356,11 +3378,15 @@ input[type="submit"] {
     width: 960px; } }
 
 #faq #accordion input:checked + label {
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 100%);
+  background-size: 3px 3px;
   margin-bottom: 0; }
 
 #faq #accordion input:checked ~ article {
   border-bottom: 1px dotted #D7D1D1;
   margin-bottom: 10px;
+  padding: 15px;
   height: auto; }
 
 /* ===========================================

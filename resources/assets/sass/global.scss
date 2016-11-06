@@ -54,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-center { text-align: center; }
 .inner { @extend .container; }
-.center-100 { width: 100%; }
 .bold { font-weight: 700; }
 .hidden { display: none; }
 
@@ -223,7 +222,7 @@ a {
     @extend .text-center;
     padding-bottom: 60px;
 
-    p { padding-bottom: 60px; }
+    p { padding-bottom: 40px; }
 
     @media (min-width: $toast-breakpoint-medium) {
         p {
