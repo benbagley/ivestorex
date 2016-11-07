@@ -13,3 +13,4 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('help', 'PagesController@help');
+Route::get('learn', 'PagesController@learn');

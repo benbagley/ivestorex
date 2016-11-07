@@ -1,0 +1,18 @@
+/* ===========================================
+            Masthead learning
+============================================ */
+#masthead-learn {
+    background: url("../images/masthead-learning.jpg") no-repeat;
+    background-position: -10%;
+    background-size: cover;
+    @extend #masthead;
+}
+
+.sales-pitch {
+    @extend .block;
+
+    p {
+        padding-bottom: 60px;
+        text-align: left;
+    }
+}

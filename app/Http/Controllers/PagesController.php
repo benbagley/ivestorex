@@ -15,4 +15,9 @@ class PagesController extends Controller
     {
         return view('pages.help-center');
     }
+
+    public function learn()
+    {
+        return view('pages.learn');
+    }
 }

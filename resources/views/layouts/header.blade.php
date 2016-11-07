@@ -9,7 +9,7 @@
         <a href="#" id="mobile-navigation"><i class="fa fa-bars"></i></a>
 
         <div class="navigation-right">
-            <a href="#">Learn</a>
+            <a href="{{ URL::to('learn') }}">Learn</a>
             <a href="#">Community</a>
             <a href="{{ URL::to('help') }}">Help Center</a>
             <a href="#" class="button-border">Contact</a>

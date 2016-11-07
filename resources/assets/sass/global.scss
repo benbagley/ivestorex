@@ -54,15 +54,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-center { text-align: center; }
 .inner { @extend .container; }
-.bold { font-weight: 700; }
+.bold { font-weight: bold; }
 .hidden { display: none; }
 
+p {
+    color: $dark-grey;
+    font-size: 16px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-grey;
+}
+
+/* ===========================================
+                    Titles
+============================================ */
 .title {
     text-transform: uppercase;
     @extend .text-center;
-    font-weight: bold;
     padding: 40px 0;
     font-size: 40px;
+    @extend .bold;
     color: $black;
     margin: 0;
 
@@ -76,15 +90,13 @@ h1, h2, h3, h4, h5, h6 {
     @extend .title;
 }
 
-p {
-    color: $dark-grey;
-    font-size: 16px;
+.title-normal {
+    text-transform: uppercase;
+    @extend .text-center;
+    padding: 40px 0;
+    @extend .bold;
+    color: $black;
     margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: $dark-grey;
 }
 
 /* ===========================================
@@ -223,6 +235,10 @@ a {
     padding-bottom: 60px;
 
     p { padding-bottom: 40px; }
+
+    .button-red {
+        padding: 15px 100px;
+    }
 
     @media (min-width: $toast-breakpoint-medium) {
         p {
