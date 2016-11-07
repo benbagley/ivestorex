@@ -16,5 +16,5 @@
 
     </body>
     <script src="https://use.fontawesome.com/2ed7438b9d.js"></script>
-    <script src="{{ URL::asset('/js/all.js') }}"></script>
+    <script src="{{ asset('../js/all.js') }}"></script>
 </html>
