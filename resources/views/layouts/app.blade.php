@@ -7,8 +7,7 @@
 
         <title>Investorex</title>
 
-        {{-- <link rel="stylesheet" href="{{ asset('../css/app.css') }}"> --}}
-        <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('../css/app.css') }}">
     </head>
     <body>
 
@@ -17,6 +16,5 @@
 
     </body>
     <script src="https://use.fontawesome.com/2ed7438b9d.js"></script>
-    {{-- <script src="{{ asset('../js/all.js') }}"></script> --}}
-    <script src="{{ elixir('js/all.js') }}"></script>
+    <script src="{{ asset('../js/all.js') }}"></script>
 </html>
