@@ -196,9 +196,9 @@ a {
         }
     }
 
-    @media (min-width: $toast-breakpoint-medium) {
-        .navigation-right { display: block; }
+    @media (min-width: $toast-breakpoint-small) {
         a#mobile-navigation { display: none; }
+        .navigation-right { display: block; }
     }
 }
 

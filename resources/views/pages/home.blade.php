@@ -50,7 +50,7 @@
 
 <div id="faq">
     <div class="inner">
-        <h1 class="title">FAQ</h1>  
+        <h1 class="title">FAQ</h1>
         <p>Answers to the questions we get asked the most.</p>
 
         <section id="accordion">
@@ -76,6 +76,15 @@
                 </article>
             </div>
         </section>
+    </div>
+</div>
+
+<div id="pricing">
+    <div class="inner">
+        <h1 class="title">Pricing</h1>
+        <p>$500</p>
+
+        <A href="{{ URL::to('learn') }}" class="button-red">Start Investing</a>
     </div>
 </div>
 @endsection

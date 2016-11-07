@@ -23,7 +23,7 @@
                 <span>Minima deserunt, nulla, accusantium sapiente adipisci obcaecati debitis illo at quo nemo magni, odio labore nisi hic dignissimos commodi maxime, doloribus asperiores. Veniam itaque incidunt facere officia voluptatum corrupti optio?</span>
             </p>
 
-            <a href="#" class="button-red">Join Now</a>
+            <a href="#" class="button-red">Buy Now</a>
         </div>
     </div>
 @endsection

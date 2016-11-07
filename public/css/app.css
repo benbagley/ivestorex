@@ -3018,13 +3018,13 @@ template {
   min-height: 1px;
   padding-left: 20px;
   vertical-align: top; }
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     .grid__col {
       display: block;
       margin-left: 0;
       margin-right: 0;
       width: auto; } }
-  @media (max-width: 700px) and (min-width: 480px) {
+  @media (max-width: 1000px) and (min-width: 480px) {
     .grid__col[class*="grid__col--m-"] {
       display: inline-block;
       margin-right: -.24em; }
@@ -3103,7 +3103,7 @@ h1, h2, h3, h4, h5, h6 {
 .container, .inner {
   margin: 0 auto;
   width: 85%; }
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     .container, .inner {
       width: 90%; } }
 
@@ -3117,10 +3117,10 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   top: 50%; }
 
-.text-center, .title, .title-left, .title-normal, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner, .block, #what-we-do, #how-do-I-join, #faq, .sales-pitch, #email-section {
+.text-center, .title, .title-left, .title-normal, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner, .block, #what-we-do, #how-do-I-join, #faq, #pricing, .sales-pitch, #email-section {
   text-align: center; }
 
-.bold, .title, .title-left, .title-normal {
+.bold, .title, .title-left, .title-normal, #pricing p {
   font-weight: bold; }
 
 .hidden {
@@ -3144,7 +3144,7 @@ a {
   font-size: 40px;
   color: #3E3E3E;
   margin: 0; }
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     .title, .title-left {
       font-size: 60px; } }
 
@@ -3225,11 +3225,11 @@ a {
       color: #FFFFFF; }
       #main-navigation .navigation-right a:hover {
         color: #3E3E3E; }
-  @media (min-width: 700px) {
-    #main-navigation .navigation-right {
-      display: block; }
+  @media (min-width: 480px) {
     #main-navigation a#mobile-navigation {
-      display: none; } }
+      display: none; }
+    #main-navigation .navigation-right {
+      display: block; } }
 
 /* ===========================================
                 Masthead
@@ -3250,14 +3250,14 @@ a {
 /* ===========================================
               Block sections
 ============================================ */
-.block, #what-we-do, #how-do-I-join, #faq, .sales-pitch {
+.block, #what-we-do, #how-do-I-join, #faq, #pricing, .sales-pitch {
   padding-bottom: 60px; }
-  .block p, #what-we-do p, #how-do-I-join p, #faq p, .sales-pitch p {
+  .block p, #what-we-do p, #how-do-I-join p, #faq p, #pricing p, .sales-pitch p {
     padding-bottom: 40px; }
-  .block .button-red, #what-we-do .button-red, #how-do-I-join .button-red, #faq .button-red, .sales-pitch .button-red {
+  .block .button-red, #what-we-do .button-red, #how-do-I-join .button-red, #faq .button-red, #pricing .button-red, .sales-pitch .button-red {
     padding: 15px 100px; }
-  @media (min-width: 700px) {
-    .block p, #what-we-do p, #how-do-I-join p, #faq p, .sales-pitch p {
+  @media (min-width: 1000px) {
+    .block p, #what-we-do p, #how-do-I-join p, #faq p, #pricing p, .sales-pitch p {
       margin: 0 auto;
       width: 960px; } }
 
@@ -3316,7 +3316,7 @@ input[type="submit"] {
       padding: 30px 0; }
       #masthead-index .inner .button-group .grid__col.grid__col--1-of-2:nth-child(1) {
         padding-bottom: 40px; }
-      @media (min-width: 700px) {
+      @media (min-width: 1000px) {
         #masthead-index .inner .button-group {
           margin: 0 auto;
           width: 415px; }
@@ -3324,7 +3324,7 @@ input[type="submit"] {
             padding: 0; }
           #masthead-index .inner .button-group a::nth-child(1) {
             margin-right: 20px; } }
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     #masthead-index {
       height: 900px; } }
 
@@ -3349,7 +3349,7 @@ input[type="submit"] {
       margin: 0 auto 15px auto; }
     #how-do-I-join .list p:last-child {
       margin-bottom: 40px; }
-    @media (min-width: 700px) {
+    @media (min-width: 1000px) {
       #how-do-I-join .list p {
         width: 960px; } }
 
@@ -3375,7 +3375,7 @@ input[type="submit"] {
   #faq #accordion article p {
     padding: 1em; }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   #faq #accordion {
     margin: 0 auto;
     width: 960px; } }
@@ -3384,13 +3384,33 @@ input[type="submit"] {
   background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 100%);
   background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 100%);
   background-size: 3px 3px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-bottom: 0;
+  border-top: 0; }
 
 #faq #accordion input:checked ~ article {
   border-bottom: 1px dotted #D7D1D1;
   margin-bottom: 10px;
   padding: 15px;
   height: auto; }
+
+/* ===========================================
+                    Pricing
+============================================ */
+#pricing {
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+  background: url("../images/pricing.jpg") no-repeat;
+  background-position: 0 50%;
+  background-size: 120%; }
+  #pricing p {
+    font-size: 38px; }
+  #pricing .button-red {
+    margin-left: -70px;
+    padding: 15px 40px; }
+    @media (min-width: 480px) {
+      #pricing .button-red {
+        padding: 15px 100px;
+        margin-left: 0; } }
 
 /* ===========================================
             Masthead help center
@@ -3409,7 +3429,7 @@ input[type="submit"] {
     font-size: 21px; }
     #email-section .title a:hover, #email-section .title-left a:hover {
       color: #9E67B3; }
-  @media (min-width: 700px) {
+  @media (min-width: 1000px) {
     #email-section .title a, #email-section .title-left a {
       font-size: 28px; } }
 
