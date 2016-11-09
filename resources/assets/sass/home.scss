@@ -1,7 +1,29 @@
+.button-group {
+    padding: 30px 0;
+
+    .grid__col.grid__col--1-of-2:nth-child(1) {
+        padding-bottom: 40px;
+    }
+
+    @media (min-width: $toast-breakpoint-medium) {
+        margin: 0 auto;
+        width: 415px;
+
+        .grid__col.grid__col--1-of-2:nth-child(1) {
+            padding: 0;
+        }
+
+        a::nth-child(1) {
+            margin-right: 20px;
+        }
+    }
+}
+
 /* ===========================================
               Masthead homepage
 ============================================ */
 #masthead-index {
+    box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, .60);
     background: url("../images/masthead.jpg") no-repeat;
     background-size: cover;
     @extend #masthead;
@@ -11,27 +33,6 @@
         padding-top: 0;
 
         h1, h4 { text-transform: none; }
-
-        .button-group {
-            padding: 30px 0;
-
-            .grid__col.grid__col--1-of-2:nth-child(1) {
-                padding-bottom: 40px;
-            }
-
-            @media (min-width: $toast-breakpoint-medium) {
-                margin: 0 auto;
-                width: 415px;
-
-                .grid__col.grid__col--1-of-2:nth-child(1) {
-                    padding: 0;
-                }
-
-                a::nth-child(1) {
-                    margin-right: 20px;
-                }
-            }
-        }
     }
 
     @media (min-width: $toast-breakpoint-medium) {
@@ -46,6 +47,23 @@
     @extend .block;
 
     p { padding-bottom: 60px; }
+
+    .icons {
+        padding-bottom: 60px;
+
+        img {
+            padding: 0 24px;
+            height: 60px;
+        }
+    }
+
+    @media (min-width: $toast-breakpoint-medium) {
+        .icons {
+            img {
+                height: 80px;
+            }
+        }
+    }
 }
 
 /* ===========================================
@@ -60,6 +78,7 @@
     .list p {
         border-bottom: 1px dotted $light-grey;
         border-top: 1px dotted $light-grey;
+        text-align: left;
         padding: 15px;
 
         &:nth-child(-n+2) {
@@ -73,6 +92,11 @@
         @media (min-width: $toast-breakpoint-medium) {
             width: 960px;
         }
+    }
+
+    .button-group {
+        .button-primary,
+        .button-secondary { padding: 15px 30px; }
     }
 }
 

@@ -3117,7 +3117,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   top: 50%; }
 
-.text-center, .title, .title-left, .title-normal, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner, .block, #what-we-do, #how-do-I-join, #faq, #pricing, .sales-pitch, #email-section {
+.text-center, .title, .title-left, .title-normal, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner, .block, #what-we-do, #how-do-I-join, #faq, #pricing, .sales-pitch, #contact-options-section {
   text-align: center; }
 
 .bold, .title, .title-left, .title-normal, #pricing p {
@@ -3235,7 +3235,6 @@ a {
                 Masthead
 ============================================ */
 #masthead, #masthead-index, #masthead-help, #masthead-learn {
-  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   margin-top: -122px;
   height: 300px;
   z-index: -999; }
@@ -3301,10 +3300,24 @@ input[type="submit"] {
     border: 2px solid #9E67B3;
     color: #9E67B3; }
 
+.button-group {
+  padding: 30px 0; }
+  .button-group .grid__col.grid__col--1-of-2:nth-child(1) {
+    padding-bottom: 40px; }
+  @media (min-width: 1000px) {
+    .button-group {
+      margin: 0 auto;
+      width: 415px; }
+      .button-group .grid__col.grid__col--1-of-2:nth-child(1) {
+        padding: 0; }
+      .button-group a::nth-child(1) {
+        margin-right: 20px; } }
+
 /* ===========================================
               Masthead homepage
 ============================================ */
 #masthead-index {
+  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   background: url("../images/masthead.jpg") no-repeat;
   background-size: cover;
   height: 750px; }
@@ -3312,18 +3325,6 @@ input[type="submit"] {
     padding-top: 0; }
     #masthead-index .inner h1, #masthead-index .inner h4 {
       text-transform: none; }
-    #masthead-index .inner .button-group {
-      padding: 30px 0; }
-      #masthead-index .inner .button-group .grid__col.grid__col--1-of-2:nth-child(1) {
-        padding-bottom: 40px; }
-      @media (min-width: 1000px) {
-        #masthead-index .inner .button-group {
-          margin: 0 auto;
-          width: 415px; }
-          #masthead-index .inner .button-group .grid__col.grid__col--1-of-2:nth-child(1) {
-            padding: 0; }
-          #masthead-index .inner .button-group a::nth-child(1) {
-            margin-right: 20px; } }
   @media (min-width: 1000px) {
     #masthead-index {
       height: 900px; } }
@@ -3333,6 +3334,16 @@ input[type="submit"] {
 ============================================ */
 #what-we-do p {
   padding-bottom: 60px; }
+
+#what-we-do .icons {
+  padding-bottom: 60px; }
+  #what-we-do .icons img {
+    padding: 0 24px;
+    height: 60px; }
+
+@media (min-width: 1000px) {
+  #what-we-do .icons img {
+    height: 80px; } }
 
 /* ===========================================
             How do I join?
@@ -3344,6 +3355,7 @@ input[type="submit"] {
   #how-do-I-join .list p {
     border-bottom: 1px dotted #D7D1D1;
     border-top: 1px dotted #D7D1D1;
+    text-align: left;
     padding: 15px; }
     #how-do-I-join .list p:nth-child(-n+2) {
       margin: 0 auto 15px auto; }
@@ -3352,6 +3364,9 @@ input[type="submit"] {
     @media (min-width: 1000px) {
       #how-do-I-join .list p {
         width: 960px; } }
+  #how-do-I-join .button-group .button-primary,
+  #how-do-I-join .button-group .button-secondary {
+    padding: 15px 30px; }
 
 /* ===========================================
                     FAQ
@@ -3416,30 +3431,32 @@ input[type="submit"] {
             Masthead help center
 ============================================ */
 #masthead-help {
-  background: url("../images/masthead-help-center.jpg") no-repeat;
-  background-position: -10%;
-  background-size: cover; }
+  background: #9E67B3; }
 
-#email-section {
-  padding: 20px 0; }
-  #email-section .title a, #email-section .title-left a {
+#contact-options-section {
+  padding: 60px 0; }
+  #contact-options-section a {
     -webkit-transition: 700ms color ease-in-out;
     transition: 700ms color ease-in-out;
     font-weight: normal;
-    font-size: 21px; }
-    #email-section .title a:hover, #email-section .title-left a:hover {
+    text-align: center;
+    font-size: 21px;
+    margin: 0 24px; }
+    #contact-options-section a p {
+      margin-top: 15px; }
+    #contact-options-section a:hover {
       color: #9E67B3; }
+  #contact-options-section .twitter:hover {
+    color: #55acee; }
   @media (min-width: 1000px) {
-    #email-section .title a, #email-section .title-left a {
-      font-size: 28px; } }
+    #contact-options-section a {
+      font-size: 60px; } }
 
 /* ===========================================
             Masthead learning
 ============================================ */
 #masthead-learn {
-  background: url("../images/masthead-learning.jpg") no-repeat;
-  background-position: -10%;
-  background-size: cover; }
+  background: #EA4049; }
 
 .sales-pitch p {
   padding-bottom: 60px;

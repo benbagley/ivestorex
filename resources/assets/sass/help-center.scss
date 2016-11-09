@@ -2,27 +2,33 @@
             Masthead help center
 ============================================ */
 #masthead-help {
-    background: url("../images/masthead-help-center.jpg") no-repeat;
-    background-position: -10%;
-    background-size: cover;
+    background: $primary;
     @extend #masthead;
 }
 
-#email-section {
+#contact-options-section {
     @extend .text-center;
-    padding: 20px 0;
+    padding: 60px 0;
 
-    .title a {
+    a {
         transition: 700ms color ease-in-out;
         font-weight: normal;
+        text-align: center;
         font-size: 21px;
+        margin: 0 24px;
+
+        p { margin-top: 15px; }
 
         &:hover {
             color: $primary;
         }
     }
 
+    .twitter {
+        &:hover { color: #55acee; }
+    }
+
     @media (min-width: $toast-breakpoint-medium) {
-        .title a { font-size: 28px; }
+        a { font-size: 60px; }
     }
 }

@@ -4,8 +4,8 @@
     <div id="masthead-learn">
         <div class="inner">
             <div class="animated zoomIn">
-                <h1 class="bold">Learning</h1>
-                <h4>Why learn through us?</h4>
+                <h1 class="bold">Become an Investorex Apprenticeship</h1>
+                <h4>The biggest changes in life come from simple decisions.</h4>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
                 <span>Minima deserunt, nulla, accusantium sapiente adipisci obcaecati debitis illo at quo nemo magni, odio labore nisi hic dignissimos commodi maxime, doloribus asperiores. Veniam itaque incidunt facere officia voluptatum corrupti optio?</span>
             </p>
 
-            <a href="#" class="button-red">Buy Now</a>
+            <a href="#" class="button-red">Become a student now</a>
         </div>
     </div>
 @endsection

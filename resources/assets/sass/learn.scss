@@ -2,10 +2,8 @@
             Masthead learning
 ============================================ */
 #masthead-learn {
-    background: url("../images/masthead-learning.jpg") no-repeat;
-    background-position: -10%;
-    background-size: cover;
     @extend #masthead;
+    background: $red;
 }
 
 .sales-pitch {

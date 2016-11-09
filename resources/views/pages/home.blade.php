@@ -26,7 +26,17 @@
 <div id="what-we-do">
     <div class="inner">
         <h1 class="title">What we do</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe dolorum, magnam, voluptates tenetur natus minima sed quam laborum nesciunt est, minus, quibusdam suscipit unde ipsum cupiditate voluptatum earum iusto sapiente.</p>
+        <p>A platform built for traders, by traders. We unite the most dedicated groups of like minded people so that they can learn, trade, and ultimately, make money together.
+        Join our fresh community today, and see the markets in an entirely new light.</p>
+
+        <div class="icons">
+            <img src="{{ URL::asset('../images/currency-exchange-icon.png') }}" alt="currency exchange icon" />
+            <img src="{{ URL::asset('../images/learning-icon.png') }}" alt="thinking icon" />
+            <img src="{{ URL::asset('../images/usd-dollar.png') }}" alt="usd dollar" />
+        </div>
+
+        <p>Have you prepared for the new retirement reality? In a low return world, you need to take control of your own plans.</p>
+
         <a href="#" class="button-red">Join Now</a>
     </div>
 </div>
@@ -37,14 +47,21 @@
         <p>To join, follow these steps:</p>
 
         <div class="list">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi explicabo deserunt quis nemo tempore cumque architecto eos nam dolorem incidunt alias saepe, a, natus nesciunt, hic dolor commodi! Consequuntur, ipsa?</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor impedit ipsum, in quas neque odit repudiandae maiores consectetur iure, autem modi nisi debitis dolorem voluptatum sed. Minima molestias, at dicta.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem vero officia earum ratione aliquid quibusdam cumque ea quo quas facilis dolor eveniet, explicabo quae dolore sapiente veniam qui, debitis.</p>
+            <p><span class="bold">As a trader:</span> Although we have a public community and we welcome everybody to join us with open arms, we only invite the most committed individuals to our private trading groups. This is why we have a small, one time fee of just $500.00 USD. You will receive ongoing support, learning materials, access to private trading groups, exclusive forum section access, and a shiny Investorex Certified badge on our community forums.</p>
+            <p><span class="bold">As a fund manager:</span> Are you an existing student looking to advance to the next level, or are you not yet a part of Investorex Group but you still have a solid track record with trading? We are looking to hire 50+ fund managers to manage our private funds, and you may be eligible for a fund. Click here to apply.</p>
+            <p><span class="bold">As a member of staff:</span> Given our aggressive growth plans and industry mission, we of course need to standardize our operations and keep the firm clean and organized throughout. We will occasionally have openings, and we are always open to offering a wide variety of internships to those fresh out of college.</p>
         </div>
 
-        <a href="#" class="button-red">Join Now</a>
+        <div class="button-group">
+            <div class="grid grid--no-gutter">
+                <div class="grid__col grid__col--1-of-2">
+                    <a href="#" class="button-primary">Available Jobs</a>
+                </div>
+                <div class="grid__col grid__col--1-of-2">
+                    <a href="#" class="button-secondary">Get in touch</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

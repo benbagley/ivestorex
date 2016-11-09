@@ -1,4 +1,4 @@
-<div class="topheader"></div>
+{{-- <div class="topheader"></div> --}}
 
 <div id="main-navigation" class="animated bounceInDown">
     <div class="inner">
