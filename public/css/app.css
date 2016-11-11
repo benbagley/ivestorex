@@ -3305,8 +3305,8 @@ input[type="submit"] {
   font-size: 1em;
   outline: none; }
   input[type="submit"]:hover {
-    border: 2px solid #9E67B3;
-    color: #9E67B3; }
+    border: 2px solid #3E606F;
+    color: #3E606F; }
 
 .button-group {
   padding: 30px 0; }
