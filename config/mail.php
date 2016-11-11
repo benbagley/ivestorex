@@ -21,6 +21,6 @@ return array(
   'port' => 587,
   'from' => array('address' => 'ben@upliftingmedia.co.uk'),
   'encryption' => 'tls',
-  'username' => 'SENDGRID_USERNAME',
-  'password' => 'SENDGRID_PASSWORD',
+  'username' => env('SENDGRID_USERNAME'),
+  'password' => env('SENDGRID_PASSWORD'),
 );
