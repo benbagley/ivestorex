@@ -3431,7 +3431,7 @@ input[type="submit"] {
             Masthead help center
 ============================================ */
 #masthead-help {
-  background: #9E67B3; }
+  background: #3E606F; }
 
 #contact-options-section {
   padding: 60px 0; }
@@ -3439,27 +3439,32 @@ input[type="submit"] {
     -webkit-transition: 700ms color ease-in-out;
     transition: 700ms color ease-in-out;
     font-weight: normal;
-    text-align: center;
-    font-size: 21px;
-    margin: 0 24px; }
+    font-size: 40px;
+    margin: 0; }
     #contact-options-section a p {
       margin-top: 15px; }
     #contact-options-section a:hover {
-      color: #9E67B3; }
+      color: #3E606F; }
   #contact-options-section .twitter:hover {
     color: #55acee; }
   @media (min-width: 1000px) {
     #contact-options-section a {
-      font-size: 60px; } }
+      font-size: 60px;
+      margin: 0 24px; } }
 
 /* ===========================================
             Masthead learning
 ============================================ */
 #masthead-learn {
-  background: #EA4049; }
+  background: #3E606F; }
 
 .sales-pitch p {
   padding-bottom: 60px;
   text-align: left; }
+
+.sales-pitch .button-red {
+  background: #3E606F; }
+  .sales-pitch .button-red:hover {
+    background: #2c444e; }
 
 /*# sourceMappingURL=app.css.map */

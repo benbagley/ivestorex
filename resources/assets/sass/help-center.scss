@@ -2,7 +2,7 @@
             Masthead help center
 ============================================ */
 #masthead-help {
-    background: $primary;
+    background: #3E606F;
     @extend #masthead;
 }
 
@@ -13,15 +13,12 @@
     a {
         transition: 700ms color ease-in-out;
         font-weight: normal;
-        text-align: center;
-        font-size: 21px;
-        margin: 0 24px;
+        font-size: 40px;
+        margin: 0;
 
         p { margin-top: 15px; }
 
-        &:hover {
-            color: $primary;
-        }
+        &:hover { color: #3E606F; }
     }
 
     .twitter {
@@ -29,6 +26,9 @@
     }
 
     @media (min-width: $toast-breakpoint-medium) {
-        a { font-size: 60px; }
+        a {
+            font-size: 60px;
+            margin: 0 24px;
+        }
     }
 }

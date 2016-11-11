@@ -2,8 +2,8 @@
             Masthead learning
 ============================================ */
 #masthead-learn {
+    background: #3E606F;
     @extend #masthead;
-    background: $red;
 }
 
 .sales-pitch {
@@ -12,5 +12,11 @@
     p {
         padding-bottom: 60px;
         text-align: left;
+    }
+
+    .button-red {
+        background: #3E606F;
+
+        &:hover { background: darken(#3E606F, 10%); }
     }
 }
