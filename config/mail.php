@@ -22,7 +22,7 @@ if (App::environment('production')) {
       'port' => 587,
       'from' => array('address' => 'contact_address'),
       'encryption' => 'tls',
-      'username' => 'sendgrid_username',
-      'password' => 'sendgrid_password',
+      'username' => 'SENDGRID_USERNAME',
+      'password' => 'SENDGRID_PASSWORD',
     );
 }
