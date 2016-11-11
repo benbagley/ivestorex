@@ -3107,6 +3107,14 @@ h1, h2, h3, h4, h5, h6 {
     .container, .inner {
       width: 90%; } }
 
+.inner-narrow {
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 85%; }
+  @media (min-width: 1000px) {
+    .inner-narrow {
+      width: 60%; } }
+
 .alert, .notice {
   text-align: center; }
 

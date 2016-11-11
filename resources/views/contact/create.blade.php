@@ -16,7 +16,7 @@
         @endforeach
     </ul>
 
-    <form class="inner" action="{{ URL('contact') }}" method="post">
+    <form class="inner-narrow" action="{{ URL('contact') }}" method="post">
         {{ csrf_field() }}
         <label for="email">Email Address</label>
         <input type="email" name="email" placeholder="Email Address">

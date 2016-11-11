@@ -2,4 +2,4 @@
 
 {{ $bodyMessage }}
 
-<h4>Email by {{ $email }}</h4>
+<p>Email by {{ $email }}</p>

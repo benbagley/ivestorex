@@ -31,5 +31,7 @@ class ContactController extends Controller
             $message->to('ben@upliftingmedia.co.uk');
             $message->subject($data['subject']);
         });
+
+        return redirect('contact/thankyou');
     }
 }
