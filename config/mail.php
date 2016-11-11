@@ -19,7 +19,7 @@ return array(
   'driver' => 'smtp',
   'host' => 'smtp.sendgrid.net',
   'port' => 587,
-  'from' => array('address' => 'contact_address'),
+  'from' => array('address' => 'ben@upliftingmedia.co.uk'),
   'encryption' => 'tls',
   'username' => 'SENDGRID_USERNAME',
   'password' => 'SENDGRID_PASSWORD',
