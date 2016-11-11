@@ -12,7 +12,7 @@
             <a href="{{ URL::to('learn') }}">Learn</a>
             <a href="#">Community</a>
             <a href="{{ URL::to('help') }}">Help Center</a>
-            <a href="#" class="button-border">Contact</a>
+            <a href="{{ URL::to('contact') }}" class="button-border">Contact</a>
         </div>
     </div>
 </div>

@@ -3107,17 +3107,25 @@ h1, h2, h3, h4, h5, h6 {
     .container, .inner {
       width: 90%; } }
 
+.inner-narrow {
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 85%; }
+  @media (min-width: 1000px) {
+    .inner-narrow {
+      width: 60%; } }
+
 .alert, .notice {
   text-align: center; }
 
-.center, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner {
+.center, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner, #masthead-contact .inner {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: relative;
   left: 50%;
   top: 50%; }
 
-.text-center, .title, .title-left, .title-normal, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner, .block, #what-we-do, #how-do-I-join, #faq, #pricing, .sales-pitch, #contact-options-section {
+.text-center, .title, .title-left, .title-normal, #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner, #masthead-contact .inner, .block, #what-we-do, #how-do-I-join, #faq, #pricing, .sales-pitch, #contact-options-section {
   text-align: center; }
 
 .bold, .title, .title-left, .title-normal, #pricing p {
@@ -3234,15 +3242,15 @@ a {
 /* ===========================================
                 Masthead
 ============================================ */
-#masthead, #masthead-index, #masthead-help, #masthead-learn {
+#masthead, #masthead-index, #masthead-help, #masthead-learn, #masthead-contact {
   margin-top: -122px;
   height: 300px;
   z-index: -999; }
-  #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner {
+  #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner, #masthead-contact .inner {
     margin: 0; }
-    #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead-learn .inner h1, #masthead .inner h4, #masthead-index .inner h4, #masthead-help .inner h4, #masthead-learn .inner h4 {
+    #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead-learn .inner h1, #masthead-contact .inner h1, #masthead .inner h4, #masthead-index .inner h4, #masthead-help .inner h4, #masthead-learn .inner h4, #masthead-contact .inner h4 {
       color: #FFFFFF; }
-    #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead-learn .inner h1 {
+    #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead-learn .inner h1, #masthead-contact .inner h1 {
       text-transform: uppercase;
       padding-top: 50px; }
 
@@ -3466,5 +3474,11 @@ input[type="submit"] {
   background: #3E606F; }
   .sales-pitch .button-red:hover {
     background: #2c444e; }
+
+/* ===========================================
+            Masthead contact
+============================================ */
+#masthead-contact {
+  background: #3E606F; }
 
 /*# sourceMappingURL=app.css.map */

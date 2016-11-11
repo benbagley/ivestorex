@@ -41,6 +41,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.inner-narrow {
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 85%;
+
+    @media (min-width: $toast-breakpoint-medium) {
+        width: 60%
+    }
+}
+
 .alert, .notice {
     text-align: center;
 }
