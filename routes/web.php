@@ -14,3 +14,6 @@
 Route::get('/', 'PagesController@index');
 Route::get('help', 'PagesController@help');
 Route::get('learn', 'PagesController@learn');
+
+Route::get('contact', 'ContactController@create');
+Route::post('contact', 'ContactController@send');
