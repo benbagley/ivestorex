@@ -49,7 +49,11 @@
 
         .title, h2, p { color: darken(#CFD0D2, 20%); }
 
-        .button-primary { background: darken(#CFD0D2, 20%); }
+        .button-primary {
+            background: darken(#CFD0D2, 20%);
+
+            &:hover { background: darken(#CFD0D2, 40%); }
+        }
     }
 
     .gold {
@@ -59,7 +63,11 @@
 
         .title, h2, p { color: darken(#D3AE43, 20%); }
 
-        .button-primary { background: darken(#D3AE43, 20%); }
+        .button-primary {
+            background: darken(#D3AE43, 20%);
+
+            &:hover { background: darken(#D3AE43, 30%); }
+        }
     }
 
     .platinum {
@@ -69,7 +77,11 @@
 
         .title, h2, p { color: darken(#707676, 20%); }
 
-        .button-primary { background: darken(#707676, 20%); }
+        .button-primary {
+            background: darken(#707676, 20%);
+
+            &:hover { background: darken(#707676, 30%); }
+        }
     }
 }
 
@@ -85,6 +97,7 @@
     @extend .inner;
 
     p {
+        line-height: 1.4;
         margin: 0 auto;
         width: 85%;
     }

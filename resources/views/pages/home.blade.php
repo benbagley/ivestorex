@@ -99,7 +99,7 @@
 <div id="pricing">
     <div class="inner">
         <h1 class="title">Pricing</h1>
-        <p>$500</p>
+        <p><span>from</span> $500</p>
 
         <A href="{{ URL::to('pricing') }}" class="button-red">Start Investing</a>
     </div>
