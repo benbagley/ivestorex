@@ -2,7 +2,9 @@
             Masthead learning
 ============================================ */
 #masthead-learn {
-    background: #3E606F;
+    background: url("../images/masthead-learn.jpg") no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, .60);
+    background-size: cover;
     @extend #masthead;
 }
 

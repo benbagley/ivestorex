@@ -3469,7 +3469,9 @@ input[type="submit"] {
             Masthead learning
 ============================================ */
 #masthead-learn {
-  background: #3E606F; }
+  background: url("../images/masthead-learn.jpg") no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
+  background-size: cover; }
 
 /* ===========================================
             Sales pitch
@@ -3570,6 +3572,11 @@ input[type="submit"] {
             Masthead contact
 ============================================ */
 #masthead-contact {
-  background: #3E606F; }
+  background: url("../images/masthead-contact.jpg") no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
+  background-size: cover; }
+  @media (min-width: 1000px) {
+    #masthead-contact {
+      background-position: -100%; } }
 
 /*# sourceMappingURL=app.css.map */
