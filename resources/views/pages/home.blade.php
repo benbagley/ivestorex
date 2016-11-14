@@ -55,10 +55,10 @@
         <div class="button-group">
             <div class="grid grid--no-gutter">
                 <div class="grid__col grid__col--1-of-2">
-                    <a href="#" class="button-primary">Available Jobs</a>
+                    <a href="#" class="button-primary">No Jobs Available</a>
                 </div>
                 <div class="grid__col grid__col--1-of-2">
-                    <a href="#" class="button-secondary">Get in touch</a>
+                    <a href="{{ URL::to('contact') }}" class="button-secondary">Get in touch</a>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
         <h1 class="title">Pricing</h1>
         <p>$500</p>
 
-        <A href="{{ URL::to('learn') }}" class="button-red">Start Investing</a>
+        <A href="{{ URL::to('pricing') }}" class="button-red">Start Investing</a>
     </div>
 </div>
 @endsection

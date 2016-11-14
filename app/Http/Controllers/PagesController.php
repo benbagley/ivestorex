@@ -20,4 +20,8 @@ class PagesController extends Controller
     {
         return view('pages.learn');
     }
+
+    public function pricing() {
+        return view('pages.pricing');
+    }
 }
