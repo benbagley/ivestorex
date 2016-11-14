@@ -13,7 +13,7 @@
                         <a href="#" class="button-primary">Fund Management</a>
                     </div>
                     <div class="grid__col grid__col--1-of-2">
-                        <a href="#" class="button-secondary">Forex Apprenticeship</a>
+                        <a href="{{ URL::to('learn') }}" class="button-secondary">Forex Apprenticeship</a>
                     </div>
                 </div>
             </div>
