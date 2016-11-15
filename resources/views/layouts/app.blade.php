@@ -15,6 +15,7 @@
         @yield('content')
 
     </body>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/2ed7438b9d.js"></script>
     <script src="{{ asset('../js/all.js') }}"></script>
 </html>

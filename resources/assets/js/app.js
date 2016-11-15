@@ -16,3 +16,8 @@
 // const app = new Vue({
 //     el: '#app'
 // });
+
+$('#mobile-navigation').click(function(e){
+    e.stopPropagation();
+	$('.navigation-right').toggleClass('active');
+});

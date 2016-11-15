@@ -1,12 +1,10 @@
-{{-- <div class="topheader"></div> --}}
-
 <div id="main-navigation" class="animated bounceInDown">
     <div class="inner">
         <div class="navigation-left">
             <a href="{{ URL::to('/') }}"><img src="{{URL::asset('/images/logo.png')}}"></a>
         </div>
 
-        <a href="#" id="mobile-navigation"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0)" id="mobile-navigation"><i class="fa fa-bars"></i></a>
 
         <div class="navigation-right">
             <a href="{{ URL::to('learn') }}">Learn</a>

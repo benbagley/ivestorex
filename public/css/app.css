@@ -3210,10 +3210,6 @@ a {
 /* ===========================================
             Main Navigation
 ============================================ */
-.topheader {
-  background: #9E67B3;
-  height: 6px; }
-
 #main-navigation {
   min-height: 100px; }
   #main-navigation .navigation-left {
@@ -3222,22 +3218,45 @@ a {
     #main-navigation .navigation-left img {
       height: 60px; }
   #main-navigation a#mobile-navigation i {
+    font-size: 18px;
+    padding: 37px 0;
     display: block;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    float: right; }
   #main-navigation .navigation-right {
     padding: 37px 0;
     display: none;
     float: right; }
     #main-navigation .navigation-right a {
-      margin-right: 15px;
+      margin-right: 0;
       color: #FFFFFF; }
       #main-navigation .navigation-right a:hover {
         color: #3E3E3E; }
-  @media (min-width: 480px) {
+  @media (min-width: 1000px) {
     #main-navigation a#mobile-navigation {
       display: none; }
     #main-navigation .navigation-right {
-      display: block; } }
+      display: block; }
+      #main-navigation .navigation-right a {
+        margin-right: 15px; } }
+
+.navigation-right.active {
+  display: block !important;
+  background: #9E67B3;
+  position: absolute;
+  margin-top: 95px;
+  z-index: 999;
+  width: 100%;
+  left: 0; }
+  .navigation-right.active a {
+    text-align: center;
+    padding: 16px 0;
+    font-size: 14px;
+    display: block; }
+  .navigation-right.active .button-border {
+    padding: 15px 0;
+    margin: 0 20px;
+    width: 90%; }
 
 /* ===========================================
                 Masthead
