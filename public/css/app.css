@@ -3211,7 +3211,9 @@ a {
             Main Navigation
 ============================================ */
 #main-navigation {
-  min-height: 100px; }
+  position: relative;
+  min-height: 100px;
+  z-index: 999; }
   #main-navigation .navigation-left {
     padding: 17px 0;
     float: left; }

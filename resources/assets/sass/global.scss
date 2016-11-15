@@ -168,7 +168,9 @@ a {
             Main Navigation
 ============================================ */
 #main-navigation {
+    position: relative;
     min-height: 100px;
+    z-index: 999;
 
     .navigation-left {
         padding: 17px 0;
