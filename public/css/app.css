@@ -3544,15 +3544,15 @@ input[type="submit"] {
       #pricing-plans .platinum {
         padding-bottom: 0; } }
   #pricing-plans .silver {
-    border: 4px solid #9a9ca1;
-    background: #CFD0D2;
+    border: 4px solid #8d8d8d;
+    background: #C0C0C0;
     height: 570px; }
     #pricing-plans .silver .title, #pricing-plans .silver .title-left, #pricing-plans .silver h2, #pricing-plans .silver p {
-      color: #9a9ca1; }
+      color: #8d8d8d; }
     #pricing-plans .silver .button-primary {
-      background: #9a9ca1; }
+      background: #8d8d8d; }
       #pricing-plans .silver .button-primary:hover {
-        background: #67696e; }
+        background: #5a5a5a; }
   #pricing-plans .gold {
     border: 4px solid #8f7321;
     background: #D3AE43;
@@ -3564,15 +3564,15 @@ input[type="submit"] {
       #pricing-plans .gold .button-primary:hover {
         background: #655118; }
   #pricing-plans .platinum {
-    border: 4px solid #3e4242;
-    background: #707676;
+    border: 4px solid #b5b2ac;
+    background: #E5E4E2;
     height: 745px; }
     #pricing-plans .platinum .title, #pricing-plans .platinum .title-left, #pricing-plans .platinum h2, #pricing-plans .platinum p {
-      color: #3e4242; }
+      color: #b5b2ac; }
     #pricing-plans .platinum .button-primary {
-      background: #3e4242; }
+      background: #b5b2ac; }
       #pricing-plans .platinum .button-primary:hover {
-        background: #252828; }
+        background: #9d9991; }
 
 /* ===========================================
                 Disclaimer

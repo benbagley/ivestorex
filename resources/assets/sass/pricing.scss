@@ -43,16 +43,16 @@
     }
 
     .silver {
-        border: 4px solid darken(#CFD0D2, 20%);
-        background: #CFD0D2;
+        border: 4px solid darken(#C0C0C0, 20%);
+        background: #C0C0C0;
         height: 570px;
 
-        .title, h2, p { color: darken(#CFD0D2, 20%); }
+        .title, h2, p { color: darken(#C0C0C0, 20%); }
 
         .button-primary {
-            background: darken(#CFD0D2, 20%);
+            background: darken(#C0C0C0, 20%);
 
-            &:hover { background: darken(#CFD0D2, 40%); }
+            &:hover { background: darken(#C0C0C0, 40%); }
         }
     }
 
@@ -71,16 +71,16 @@
     }
 
     .platinum {
-        border: 4px solid darken(#707676, 20%);
-        background: #707676;
+        border: 4px solid darken(#E5E4E2, 20%);
+        background: #E5E4E2;
         height: 745px;
 
-        .title, h2, p { color: darken(#707676, 20%); }
+        .title, h2, p { color: darken(#E5E4E2, 20%); }
 
         .button-primary {
-            background: darken(#707676, 20%);
+            background: darken(#E5E4E2, 20%);
 
-            &:hover { background: darken(#707676, 30%); }
+            &:hover { background: darken(#E5E4E2, 30%); }
         }
     }
 }
