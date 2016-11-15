@@ -3251,7 +3251,6 @@ a {
   .navigation-right.active a {
     text-align: center;
     padding: 16px 0;
-    font-size: 14px;
     display: block; }
   .navigation-right.active .button-border {
     padding: 15px 0;
