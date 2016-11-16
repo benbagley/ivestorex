@@ -260,7 +260,7 @@ a {
     }
 
     @media (min-width: $toast-breakpoint-medium) {
-        a#mobile-navigation { display: none; }
+        .hamburger-menu { display: none; }
         .navigation-right {
             display: block;
 

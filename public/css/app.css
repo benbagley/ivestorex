@@ -3288,7 +3288,7 @@ a {
       #main-navigation .navigation-right a:hover {
         color: #3E3E3E; }
   @media (min-width: 1000px) {
-    #main-navigation a#mobile-navigation {
+    #main-navigation .hamburger-menu {
       display: none; }
     #main-navigation .navigation-right {
       display: block; }
