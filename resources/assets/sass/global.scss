@@ -6,8 +6,8 @@
 }
 
 html, body {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 $light-grey: #D7D1D1;
@@ -64,11 +64,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-center { text-align: center; }
 .inner { @extend .container; }
-.bold { font-weight: bold; }
+.bold { font-weight: 600; }
 .hidden { display: none; }
 
 p {
     color: $dark-grey;
+    line-height: 1.5;
     font-size: 16px;
     margin: 0;
 }
@@ -251,6 +252,7 @@ a {
 
         a {
             margin-right: 0;
+            font-size: 14px;
             color: $white;
 
             &:hover {

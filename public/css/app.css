@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Poppins:400,600";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -3086,8 +3087,8 @@ template {
   box-sizing: border-box; }
 
 html, body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300; }
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
@@ -3129,13 +3130,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 .bold, .title, .title-left, .title-normal, #pricing p {
-  font-weight: bold; }
+  font-weight: 600; }
 
 .hidden {
   display: none; }
 
 p {
   color: #666666;
+  line-height: 1.5;
   font-size: 16px;
   margin: 0; }
 
@@ -3284,6 +3286,7 @@ a {
     float: right; }
     #main-navigation .navigation-right a {
       margin-right: 0;
+      font-size: 14px;
       color: #FFFFFF; }
       #main-navigation .navigation-right a:hover {
         color: #3E3E3E; }
@@ -3588,6 +3591,10 @@ input[type="submit"] {
     #pricing-plans .platinum .title,
     #pricing-plans .platinum .title-left {
       padding-bottom: 0; }
+    #pricing-plans .silver table p,
+    #pricing-plans .gold table p,
+    #pricing-plans .platinum table p {
+      line-height: 1; }
     #pricing-plans .silver table td,
     #pricing-plans .gold table td,
     #pricing-plans .platinum table td {
@@ -3605,8 +3612,8 @@ input[type="submit"] {
         padding-bottom: 0; } }
   #pricing-plans .silver {
     border: 4px solid #8d8d8d;
-    background: #C0C0C0;
-    height: 570px; }
+    padding-bottom: 60px;
+    background: #C0C0C0; }
     #pricing-plans .silver .title, #pricing-plans .silver .title-left, #pricing-plans .silver h2, #pricing-plans .silver p {
       color: #8d8d8d; }
     #pricing-plans .silver .button-primary {
@@ -3615,8 +3622,8 @@ input[type="submit"] {
         background: #5a5a5a; }
   #pricing-plans .gold {
     border: 4px solid #8f7321;
-    background: #D3AE43;
-    height: 685px; }
+    padding-bottom: 60px;
+    background: #D3AE43; }
     #pricing-plans .gold .title, #pricing-plans .gold .title-left, #pricing-plans .gold h2, #pricing-plans .gold p {
       color: #8f7321; }
     #pricing-plans .gold .button-primary {
@@ -3625,8 +3632,8 @@ input[type="submit"] {
         background: #655118; }
   #pricing-plans .platinum {
     border: 4px solid #b5b2ac;
-    background: #E5E4E2;
-    height: 745px; }
+    padding-bottom: 60px;
+    background: #E5E4E2; }
     #pricing-plans .platinum .title, #pricing-plans .platinum .title-left, #pricing-plans .platinum h2, #pricing-plans .platinum p {
       color: #b5b2ac; }
     #pricing-plans .platinum .button-primary {
