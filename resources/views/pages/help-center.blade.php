@@ -22,7 +22,7 @@
                 <p>Tweet us</p>
             </i>
         </a>
-        <a href="#">
+        <a href="{{ URL::to('/#faq') }}">
             <i class="fa fa-list-alt" aria-hidden="true">
                 <p>Go to our FAQ</p>
             </i>

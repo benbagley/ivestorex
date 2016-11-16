@@ -2,7 +2,9 @@
             Masthead pricing
 ============================================ */
 #masthead-pricing {
-    background: #3E606F;
+    background: url("../images/masthead-pricing.jpg") no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, .60);
+    background-size: cover;
     @extend #masthead;
 }
 

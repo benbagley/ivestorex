@@ -17,7 +17,13 @@
 //     el: '#app'
 // });
 
-$('#mobile-navigation').click(function(e){
+$('.hamburger-menu').click(function(e){
     e.stopPropagation();
 	$('.navigation-right').toggleClass('active');
 });
+
+(function () {
+	$('.hamburger-menu').on('click', function() {
+		$('.bar').toggleClass('animate');
+	})
+})();

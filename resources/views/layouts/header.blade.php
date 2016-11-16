@@ -4,7 +4,9 @@
             <a href="{{ URL::to('/') }}"><img src="{{URL::asset('/images/logo.png')}}"></a>
         </div>
 
-        <a href="javascript:void(0)" id="mobile-navigation"><i class="fa fa-bars"></i></a>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+        </div>
 
         <div class="navigation-right">
             <a href="{{ URL::to('learn') }}">Learn</a>
