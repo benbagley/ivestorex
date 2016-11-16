@@ -3514,7 +3514,12 @@ input[type="submit"] {
             Masthead help center
 ============================================ */
 #masthead-help {
-  background: #3E606F; }
+  background: url("../images/masthead-help.jpg") no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
+  background-size: cover; }
+  @media (min-width: 1000px) {
+    #masthead-help {
+      background-position: -100% 0; } }
 
 /* ===========================================
             Contact options
