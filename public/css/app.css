@@ -3328,7 +3328,11 @@ a {
       color: #FFFFFF; }
     #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead-learn .inner h1, #masthead-pricing .inner h1, #masthead-contact .inner h1, #masthead #pricing-plans h1, #masthead-index #pricing-plans h1, #masthead-help #pricing-plans h1, #masthead-learn #pricing-plans h1, #masthead-pricing #pricing-plans h1, #masthead-contact #pricing-plans h1, #masthead .disclaimer h1, #masthead-index .disclaimer h1, #masthead-help .disclaimer h1, #masthead-learn .disclaimer h1, #masthead-pricing .disclaimer h1, #masthead-contact .disclaimer h1 {
       text-transform: uppercase;
-      padding-top: 50px; }
+      padding-top: 50px;
+      font-size: 25px; }
+    @media (min-width: 1000px) {
+      #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead-learn .inner h1, #masthead-pricing .inner h1, #masthead-contact .inner h1, #masthead #pricing-plans h1, #masthead-index #pricing-plans h1, #masthead-help #pricing-plans h1, #masthead-learn #pricing-plans h1, #masthead-pricing #pricing-plans h1, #masthead-contact #pricing-plans h1, #masthead .disclaimer h1, #masthead-index .disclaimer h1, #masthead-help .disclaimer h1, #masthead-learn .disclaimer h1, #masthead-pricing .disclaimer h1, #masthead-contact .disclaimer h1 {
+        font-size: 36px; } }
 
 /* ===========================================
               Block sections

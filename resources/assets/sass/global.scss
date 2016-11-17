@@ -312,6 +312,11 @@ a {
         h1 {
             text-transform: uppercase;
             padding-top: 50px;
+            font-size: 25px;
+        }
+
+        @media (min-width: $toast-breakpoint-medium) {
+            h1 { font-size: 36px; }
         }
     }
 }
