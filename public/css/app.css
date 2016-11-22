@@ -3405,8 +3405,8 @@ input[type="submit"] {
               Masthead homepage
 ============================================ */
 #masthead-index {
-  box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
-  background: url("../images/masthead.jpg") no-repeat;
+  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead.jpg") no-repeat;
+  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead.jpg") no-repeat;
   background-size: cover;
   height: 750px; }
   #masthead-index .inner, #masthead-index #pricing-plans, #masthead-index .disclaimer {
@@ -3521,7 +3521,8 @@ input[type="submit"] {
             Masthead help center
 ============================================ */
 #masthead-help {
-  background: url("../images/masthead-help.jpg") no-repeat;
+  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-help.jpg") no-repeat;
+  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-help.jpg") no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   background-size: cover; }
   @media (min-width: 1000px) {
@@ -3554,7 +3555,8 @@ input[type="submit"] {
             Masthead learning
 ============================================ */
 #masthead-learn {
-  background: url("../images/masthead-learn.jpg") no-repeat;
+  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-learn.jpg") no-repeat;
+  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-learn.jpg") no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   background-size: cover; }
 
@@ -3574,7 +3576,8 @@ input[type="submit"] {
             Masthead pricing
 ============================================ */
 #masthead-pricing {
-  background: url("../images/masthead-pricing.jpg") no-repeat;
+  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-pricing.jpg") no-repeat;
+  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-pricing.jpg") no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   background-size: cover; }
 
@@ -3664,7 +3667,8 @@ input[type="submit"] {
             Masthead contact
 ============================================ */
 #masthead-contact {
-  background: url("../images/masthead-contact.jpg") no-repeat;
+  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-contact.jpg") no-repeat;
+  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-contact.jpg") no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   background-size: cover; }
   @media (min-width: 1000px) {
