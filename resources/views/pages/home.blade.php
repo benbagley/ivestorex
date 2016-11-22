@@ -3,27 +3,30 @@
 @section('content')
 <div id="masthead-index">
     <div class="inner">
-        <div class="animated zoomIn">
-            <h1>Welcome to <span class="bold">Investorex</span></h1>
-            <h4>World class Forex Education and Wealth Management</h4>
+        <div class="grid">
+            <div class="grid__col grid__col--1-of-2">
+                <div class="animated zoomIn">
+                    <h1 class="bold">Welcome to the Investorex family.</h1>
+                    <h3 class="bold">Straight up hard work, learning and everything forex.</h3>
 
-            <div class="button-group">
-                <div class="grid grid--no-gutter">
-                    <div class="grid__col grid__col--1-of-2">
-                        <a href="#" class="button-primary">Fund Management</a>
-                    </div>
-                    <div class="grid__col grid__col--1-of-2">
-                        <a href="{{ URL::to('learn') }}" class="button-secondary">Forex Apprenticeship</a>
+                    <div class="button-group">
+                        <div class="grid grid--no-gutter">
+                            <div class="grid__col grid__col--1-of-2">
+                                <a href="{{ URL::to('/#pricing') }}" class="button-primary">Join the family</a>
+                            </div>
+                            <div class="grid__col grid__col--1-of-2">
+                                <a href="{{ URL::to('/#what-we-do') }}" class="button-secondary">What is Investorex</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <h4>Exposing the bank's <span class="bold">dirty little secrets</span> that they do not want you to know.</h4>
+            <div class="grid__col grid__col--1-of-2">
+                <img src="../images/iphone.png" alt="forex iPhone">
+            </div>
         </div>
     </div>
 </div>
-
-{{ PHP_URL_PASS }}
 
 <div id="what-we-do">
     <div class="inner">

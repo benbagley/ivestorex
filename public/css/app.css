@@ -3324,7 +3324,13 @@ a {
   z-index: -999; }
   #masthead .inner, #masthead-index .inner, #masthead-help .inner, #masthead-learn .inner, #masthead-pricing .inner, #masthead-contact .inner, #masthead #pricing-plans, #masthead-index #pricing-plans, #masthead-help #pricing-plans, #masthead-learn #pricing-plans, #masthead-pricing #pricing-plans, #masthead-contact #pricing-plans, #masthead .disclaimer, #masthead-index .disclaimer, #masthead-help .disclaimer, #masthead-learn .disclaimer, #masthead-pricing .disclaimer, #masthead-contact .disclaimer {
     margin: 0; }
-    #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead-learn .inner h1, #masthead-pricing .inner h1, #masthead-contact .inner h1, #masthead #pricing-plans h1, #masthead-index #pricing-plans h1, #masthead-help #pricing-plans h1, #masthead-learn #pricing-plans h1, #masthead-pricing #pricing-plans h1, #masthead-contact #pricing-plans h1, #masthead .disclaimer h1, #masthead-index .disclaimer h1, #masthead-help .disclaimer h1, #masthead-learn .disclaimer h1, #masthead-pricing .disclaimer h1, #masthead-contact .disclaimer h1, #masthead .inner h4, #masthead-index .inner h4, #masthead-help .inner h4, #masthead-learn .inner h4, #masthead-pricing .inner h4, #masthead-contact .inner h4, #masthead #pricing-plans h4, #masthead-index #pricing-plans h4, #masthead-help #pricing-plans h4, #masthead-learn #pricing-plans h4, #masthead-pricing #pricing-plans h4, #masthead-contact #pricing-plans h4, #masthead .disclaimer h4, #masthead-index .disclaimer h4, #masthead-help .disclaimer h4, #masthead-learn .disclaimer h4, #masthead-pricing .disclaimer h4, #masthead-contact .disclaimer h4 {
+    #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead-learn .inner h1, #masthead-pricing .inner h1, #masthead-contact .inner h1, #masthead #pricing-plans h1, #masthead-index #pricing-plans h1, #masthead-help #pricing-plans h1, #masthead-learn #pricing-plans h1, #masthead-pricing #pricing-plans h1, #masthead-contact #pricing-plans h1, #masthead .disclaimer h1, #masthead-index .disclaimer h1, #masthead-help .disclaimer h1, #masthead-learn .disclaimer h1, #masthead-pricing .disclaimer h1, #masthead-contact .disclaimer h1,
+    #masthead .inner h3, #masthead-index .inner h3, #masthead-help .inner h3, #masthead-learn .inner h3, #masthead-pricing .inner h3, #masthead-contact .inner h3,
+    #masthead #pricing-plans h3, #masthead-index #pricing-plans h3, #masthead-help #pricing-plans h3, #masthead-learn #pricing-plans h3, #masthead-pricing #pricing-plans h3, #masthead-contact #pricing-plans h3,
+    #masthead .disclaimer h3, #masthead-index .disclaimer h3, #masthead-help .disclaimer h3, #masthead-learn .disclaimer h3, #masthead-pricing .disclaimer h3, #masthead-contact .disclaimer h3,
+    #masthead .inner h4, #masthead-index .inner h4, #masthead-help .inner h4, #masthead-learn .inner h4, #masthead-pricing .inner h4, #masthead-contact .inner h4,
+    #masthead #pricing-plans h4, #masthead-index #pricing-plans h4, #masthead-help #pricing-plans h4, #masthead-learn #pricing-plans h4, #masthead-pricing #pricing-plans h4, #masthead-contact #pricing-plans h4,
+    #masthead .disclaimer h4, #masthead-index .disclaimer h4, #masthead-help .disclaimer h4, #masthead-learn .disclaimer h4, #masthead-pricing .disclaimer h4, #masthead-contact .disclaimer h4 {
       color: #FFFFFF; }
     #masthead .inner h1, #masthead-index .inner h1, #masthead-help .inner h1, #masthead-learn .inner h1, #masthead-pricing .inner h1, #masthead-contact .inner h1, #masthead #pricing-plans h1, #masthead-index #pricing-plans h1, #masthead-help #pricing-plans h1, #masthead-learn #pricing-plans h1, #masthead-pricing #pricing-plans h1, #masthead-contact #pricing-plans h1, #masthead .disclaimer h1, #masthead-index .disclaimer h1, #masthead-help .disclaimer h1, #masthead-learn .disclaimer h1, #masthead-pricing .disclaimer h1, #masthead-contact .disclaimer h1 {
       text-transform: uppercase;
@@ -3391,11 +3397,12 @@ input[type="submit"] {
 .button-group {
   padding: 30px 0; }
   .button-group .grid__col.grid__col--1-of-2:nth-child(1) {
-    padding-bottom: 40px; }
+    padding-bottom: 55px; }
   @media (min-width: 1000px) {
     .button-group {
-      margin: 0 auto;
-      width: 415px; }
+      margin: 0 0 0 -25px;
+      width: 415px;
+      float: left; }
       .button-group .grid__col.grid__col--1-of-2:nth-child(1) {
         padding: 0; }
       .button-group a::nth-child(1) {
@@ -3405,17 +3412,43 @@ input[type="submit"] {
               Masthead homepage
 ============================================ */
 #masthead-index {
-  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead.jpg") no-repeat;
-  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead.jpg") no-repeat;
+  background: -webkit-linear-gradient(45deg, #3b8bea 0%, #8f6ddb 69%);
+  background: linear-gradient(45deg, #3b8bea 0%, #8f6ddb 69%);
   background-size: cover;
   height: 750px; }
   #masthead-index .inner, #masthead-index #pricing-plans, #masthead-index .disclaimer {
     padding-top: 0; }
-    #masthead-index .inner h1, #masthead-index #pricing-plans h1, #masthead-index .disclaimer h1, #masthead-index .inner h4, #masthead-index #pricing-plans h4, #masthead-index .disclaimer h4 {
-      text-transform: none; }
+    #masthead-index .inner img, #masthead-index #pricing-plans img, #masthead-index .disclaimer img {
+      display: none; }
+    #masthead-index .inner .button-primary, #masthead-index #pricing-plans .button-primary, #masthead-index .disclaimer .button-primary {
+      border: 2px solid #9E67B3;
+      background: transparent; }
+      #masthead-index .inner .button-primary:hover, #masthead-index #pricing-plans .button-primary:hover, #masthead-index .disclaimer .button-primary:hover {
+        background: rgba(158, 103, 179, 0.7); }
+    #masthead-index .inner .button-secondary, #masthead-index #pricing-plans .button-secondary, #masthead-index .disclaimer .button-secondary {
+      border: 2px solid #2691CD;
+      background: transparent; }
+      #masthead-index .inner .button-secondary:hover, #masthead-index #pricing-plans .button-secondary:hover, #masthead-index .disclaimer .button-secondary:hover {
+        background: rgba(38, 145, 205, 0.7); }
   @media (min-width: 1000px) {
     #masthead-index {
-      height: 900px; } }
+      height: 750px; }
+      #masthead-index .inner h1, #masthead-index #pricing-plans h1, #masthead-index .disclaimer h1,
+      #masthead-index .inner h3,
+      #masthead-index #pricing-plans h3,
+      #masthead-index .disclaimer h3,
+      #masthead-index .inner h4,
+      #masthead-index #pricing-plans h4,
+      #masthead-index .disclaimer h4 {
+        text-transform: uppercase;
+        text-align: left; }
+      #masthead-index .inner h4, #masthead-index #pricing-plans h4, #masthead-index .disclaimer h4 {
+        width: 400px; }
+      #masthead-index .inner img, #masthead-index #pricing-plans img, #masthead-index .disclaimer img {
+        position: absolute;
+        display: block;
+        left: 70%;
+        top: -18%; } }
 
 /* ===========================================
                 What we do
@@ -3455,6 +3488,10 @@ input[type="submit"] {
   #how-do-I-join .button-group .button-primary,
   #how-do-I-join .button-group .button-secondary {
     padding: 15px 30px; }
+  @media (min-width: 1000px) {
+    #how-do-I-join .button-group {
+      margin: 0 auto;
+      float: none; } }
 
 /* ===========================================
                     FAQ
@@ -3521,8 +3558,8 @@ input[type="submit"] {
             Masthead help center
 ============================================ */
 #masthead-help {
-  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-help.jpg") no-repeat;
-  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-help.jpg") no-repeat;
+  background: -webkit-linear-gradient(45deg, rgba(59, 139, 234, 0.5) 0%, rgba(143, 109, 219, 0.5) 69%), url("../images/masthead-help.jpg") no-repeat;
+  background: linear-gradient(45deg, rgba(59, 139, 234, 0.5) 0%, rgba(143, 109, 219, 0.5) 69%), url("../images/masthead-help.jpg") no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   background-size: cover; }
   @media (min-width: 1000px) {
@@ -3555,8 +3592,8 @@ input[type="submit"] {
             Masthead learning
 ============================================ */
 #masthead-learn {
-  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-learn.jpg") no-repeat;
-  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-learn.jpg") no-repeat;
+  background: -webkit-linear-gradient(45deg, rgba(59, 139, 234, 0.5) 0%, rgba(143, 109, 219, 0.5) 69%), url("../images/masthead-learn.jpg") no-repeat;
+  background: linear-gradient(45deg, rgba(59, 139, 234, 0.5) 0%, rgba(143, 109, 219, 0.5) 69%), url("../images/masthead-learn.jpg") no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   background-size: cover; }
 
@@ -3576,8 +3613,8 @@ input[type="submit"] {
             Masthead pricing
 ============================================ */
 #masthead-pricing {
-  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-pricing.jpg") no-repeat;
-  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-pricing.jpg") no-repeat;
+  background: -webkit-linear-gradient(45deg, rgba(59, 139, 234, 0.5) 0%, rgba(143, 109, 219, 0.5) 69%), url("../images/masthead-pricing.jpg") no-repeat;
+  background: linear-gradient(45deg, rgba(59, 139, 234, 0.5) 0%, rgba(143, 109, 219, 0.5) 69%), url("../images/masthead-pricing.jpg") no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   background-size: cover; }
 
@@ -3667,8 +3704,8 @@ input[type="submit"] {
             Masthead contact
 ============================================ */
 #masthead-contact {
-  background: -webkit-linear-gradient(315deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-contact.jpg") no-repeat;
-  background: linear-gradient(135deg, rgba(147, 112, 219, 0.5) 0%, rgba(0, 206, 209, 0.5) 100%), url("../images/masthead-contact.jpg") no-repeat;
+  background: -webkit-linear-gradient(45deg, rgba(59, 139, 234, 0.5) 0%, rgba(143, 109, 219, 0.5) 69%), url("../images/masthead-contact.jpg") no-repeat;
+  background: linear-gradient(45deg, rgba(59, 139, 234, 0.5) 0%, rgba(143, 109, 219, 0.5) 69%), url("../images/masthead-contact.jpg") no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(158, 103, 179, 0.6);
   background-size: cover; }
   @media (min-width: 1000px) {
