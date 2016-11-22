@@ -12,7 +12,7 @@
                     <div class="button-group">
                         <div class="grid grid--no-gutter">
                             <div class="grid__col grid__col--1-of-2">
-                                <a href="{{ URL::to('/#pricing') }}" class="button-primary">Join the family</a>
+                                <a href="{{ URL::to('pricing') }}" class="button-primary">Join the family</a>
                             </div>
                             <div class="grid__col grid__col--1-of-2">
                                 <a href="{{ URL::to('/#what-we-do') }}" class="button-secondary">What is Investorex</a>
