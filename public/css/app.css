@@ -3447,6 +3447,7 @@ input[type="submit"] {
       #masthead-index .inner img, #masthead-index #pricing-plans img, #masthead-index .disclaimer img {
         position: absolute;
         display: block;
+        height: 600px;
         left: 70%;
         top: -18%; } }
 
